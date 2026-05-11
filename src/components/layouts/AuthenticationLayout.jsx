@@ -5,7 +5,7 @@ import Footer from "../LayoutComponents/Footer.jsx";
 export default function AuthenticationLayout(){
     return(
         <>
-            {/* <Navbar/> */}
+            
             <Outlet/>
             
         </>

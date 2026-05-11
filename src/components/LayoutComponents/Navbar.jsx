@@ -36,18 +36,16 @@ export default function Navbar(){
 
       <div className="flex gap-4 items-center">
 
-        <div className="form-control flex flex-row items-center gap-2">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="input input-bordered bg-base-100 w-24 md:w-64 focus:w-80 transition-all duration-300"
-            onChange={handleChange}
-          />
+        <div className="form-control flex flex-row items-center gap-2 min-w-0">
 
-          <Link className="btn btn-square" to={`/search/${slug}`}>
-            <FaSearch />
-          </Link>
-        </div>
+  <input type="text" placeholder="Search..." className="input input-bordered bg-base-100 w-24 md:w-64 max-w-full focus:w-full md:focus:w-80 transition-all duration-300"
+    onChange={handleChange} />
+
+           <Link className="btn btn-square flex-shrink-0" to={`/search/${slug}`}>
+        <FaSearch />
+            </Link>
+
+         </div>
 
         <div className="dropdown dropdown-end">
 

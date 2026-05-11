@@ -17,7 +17,6 @@ main {
   color: #e0e7ff;
 }
 
-/* generi */
 
 .bg-nav-gray {
   background: rgba(15, 23, 42, 0.8);
@@ -230,18 +229,16 @@ nav::-webkit-scrollbar-thumb {
   backdrop-filter: blur(10px);
 }
 
-/* barra generi mobile */
 .bg-base-300.overflow-x-auto {
   border-bottom: 1px solid rgba(0, 183, 255, 0.25);
   box-shadow: 0 5px 20px rgba(0, 183, 255, 0.08);
 }
 
-/* container interno */
+
 .bg-base-300 .flex {
   padding-bottom: 4px;
 }
 
-/* bottoni generi */
 .bg-base-300 a.btn {
   background: rgba(0, 183, 255, 0.06);
   border: 1px solid rgba(0, 183, 255, 0.15);
@@ -253,7 +250,6 @@ nav::-webkit-scrollbar-thumb {
   white-space: nowrap;
 }
 
-/* hover effetto neon */
 .bg-base-300 a.btn:hover {
   background: #00b7ff;
   color: #020617;
@@ -261,7 +257,7 @@ nav::-webkit-scrollbar-thumb {
   transform: translateY(-1px);
 }
 
-/* scroll più pulito */
+
 .bg-base-300.overflow-x-auto::-webkit-scrollbar {
   height: 4px;
 }

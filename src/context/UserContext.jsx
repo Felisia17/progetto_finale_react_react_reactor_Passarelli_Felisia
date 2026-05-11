@@ -23,9 +23,6 @@ export default function UserContextProvider({ children }){
     }
 
 
-
-//questa parte di codice permette l'aggiornamento automatico della pagina nella registrazione
-
 useEffect(() => {
   const { data: listener } = supabase.auth.onAuthStateChange(
     (event, session) => {
@@ -45,14 +42,7 @@ useEffect(() => {
 }, []);
 
 
-    
-    
-    
-    
-    
-    
-    
-    useEffect(
+     useEffect(
         ()=>{
             getUser();
         }, []
