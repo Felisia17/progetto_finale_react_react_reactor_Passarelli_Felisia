@@ -1,6 +1,9 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import {supabase} from "../../database/supabase.js";
+import { useContext } from "react";
+import { UserContext } from "../../context/UserContext";
+
 
 export default function RegisterPage(){
 
@@ -9,6 +12,8 @@ export default function RegisterPage(){
         handleSubmit,
         formState: {errors},
     } = useForm();
+
+    const {signUp} = useContext(UserContext);
 
     const navigate = useNavigate();
 
@@ -30,7 +35,10 @@ export default function RegisterPage(){
     }
   return (
   <main className="h-screen flex justify-center items-center">
-    
+
+      <h1 className="text-2xl sm:text-3xl font-bold font-electro text-center mb-6 mr-20">
+    Crea il tuo Account
+  </h1>
     <form className="p-10 bg-nav-gray w-1/2" onSubmit={handleSubmit(onSubmit)}>
       <input
         type="text"

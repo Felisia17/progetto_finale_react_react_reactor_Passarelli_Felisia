@@ -7,7 +7,7 @@ export default function AuthenticationLayout(){
         <>
             {/* <Navbar/> */}
             <Outlet/>
-            <Footer/>
+            
         </>
     )
 }
