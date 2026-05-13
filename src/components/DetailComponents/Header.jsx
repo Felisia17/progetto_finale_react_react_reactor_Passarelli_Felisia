@@ -7,10 +7,12 @@ export default function Header({ game }) {
       <h2 className="text-center text-2xl font-electro">
         Released on: <span className="font-bold">{game.released}</span>
       </h2>
-      <section className="grid grid-cols-2 gap-4 mt-10">
-        <article className="px-10">
-          <p>{game.description_raw}</p>
-        </article>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        <article className="px-4 md:px-10 flex justify-center">
+  <p className="max-w-sm text-center md:text-left text-sm md:text-base leading-6 text-nav-gray">
+    {game.description_raw}
+  </p>
+</article>
         <article className="text-center">
           <p className="text-xl mb-5"><span className="font-bold">Rating:</span> {game.rating}</p>
           <p className="text-xl font-bold">Genres:</p>
